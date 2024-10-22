@@ -73,4 +73,13 @@ h1.logo {
   color: rgb(185.4917355372, 212.3388429752, 235.5082644628);
 }
 
+/* Styling Input Fields */
+#input-group {
+  position: relative;
+  padding: 30px 20px 20px 20px;
+  margin: 10px 60px 10px 10px;
+  opacity: 0; /* Hides input & label, change to 1 in JS */
+  transition: opacity 0.3s ease-in-out;
+}
+
 /*# sourceMappingURL=main.css.map */
