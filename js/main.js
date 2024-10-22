@@ -16,4 +16,7 @@ const shakeTime = 100;
 // Time to switch from one question to another
 const switchTime = 200;
 
+// Initialize Position of First Question
+let position = 0;
+
 
