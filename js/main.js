@@ -27,4 +27,46 @@ const inputGroup = document.querySelector('#input-group');
 const inputField = document.querySelector('#input-field');
 const inputLabel = document.querySelector('#input-label');
 const inputProgress = document.querySelector('#input-progress');
-const progress = document.querySelector('#progress-bar');
+const formProgress = document.querySelector('#progress-bar');
+
+
+// Event Listeners
+
+// Listen for page load
+document.addEventListener('DOMContentLoaded', prepForm);
+
+// Functions
+
+// Prepare DOM Elements
+function prepForm(){
+
+    // Get Current Question from Array & Set it to inputLabel
+    inputLabel.innerHTML = questions[position].question;
+
+    // Get Current Question Type & Set it to inputField
+    // If No Type is Found, set it to Text
+    inputField.type = questions[position].type || 'text';
+
+    // Get Current Answer
+    // If no default value, set to blank
+    inputField.value = questions[position].answer || '';
+
+    // Focus On Element
+    inputField.focus();
+
+    // Set formProgress Bar Width
+    // Percentage Out of Total Array Length (100%)
+    formProgress.style.width = (position * 100) / questions.length + '%';
+
+    // Decide whether to Display Prev Button OR User Icon
+    prevBtn.className = position ? 'fas fa-arrow-left' : 'fas fa-user';
+
+    // Show Question & Display inputProgress
+    showQuestion();
+
+
+}
+
+
+
+
