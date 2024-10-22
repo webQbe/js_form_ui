@@ -7,3 +7,13 @@ const questions = [
     { question: 'Create A Password', type: 'password' }
 
 ];
+
+// Transition Times
+
+// Shake Animation time 100 milliseconds
+const shakeTime = 100; 
+
+// Time to switch from one question to another
+const switchTime = 200;
+
+
