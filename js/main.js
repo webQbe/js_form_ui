@@ -126,13 +126,13 @@ function inputFail(){
     formBox.className = 'error';
 
     // Repeat Shake Motion of transform() 
-    // 20 Times
-    for(let i = 0; i < 20; i++){
+    // 6 Times, Hits one side 3 times
+    for(let i = 0; i < 6; i++){
 
         setTimeout(transform, shakeTime * i, ((i % 2) * 2 - 1) * 20, 0);
 
         // Prevent stopping at Right side
-        setTimeout(transform, shakeTime * 20, 0, 0);
+        setTimeout(transform, shakeTime * 6, 0, 0);
         
         // Focus Input Field
         inputField.focus();
@@ -145,7 +145,10 @@ function inputFail(){
 // When pattern is matching
 function inputPass(){
 
+    formBox.className = ''; // Removes .error class
 
-
+    // Animation
+    setTimeout(transform, shakeTime * 0, 0, 10); // Push down 
+    setTimeout(transform, shakeTime * 1, 0, 0); // Pull up again
 
 }
