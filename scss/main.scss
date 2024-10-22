@@ -3,8 +3,9 @@
 // Importing fonts
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto');
 
-// Creating a Variable
+// Creating a Variables
 $primary: #428bca;
+$secondary: lighten($primary, 30%); /* Make new color by lightening $primary color */
 
 body{
 
@@ -62,5 +63,27 @@ h1.logo{
     overflow: hidden;
     transition: 0.8s ease-in-out; /* Animation */
     box-shadow: 0 16px 24px 2px rgba(0,0,0,0); /* Hide box shadow */
+
+}
+
+
+/* Styling Next Button */
+
+#next-btn{
+
+    position: absolute; /* To move it around */
+    right: 20px;
+    bottom: 10px;
+    font-size: 40px;
+    color: $primary;
+    float: right;
+    cursor: pointer;
+    z-index: 2; /* Places it on top */
+
+     &:hover{
+
+        color: $secondary;
+
+     }
 
 }
