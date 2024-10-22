@@ -92,6 +92,8 @@ function hideQuestion(){
 
 // Transform to Create Shake Motion
 function transform(x, y){
+    
+    console.log(x, y);
 
     // Add Animation To formBox
     formBox.style.transform = `translate(${x}px, ${y}px)`;
