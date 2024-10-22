@@ -120,7 +120,7 @@ h1.logo{
     position: relative;
     padding: 30px 20px 20px 20px;
     margin: 10px 60px 10px 10px;
-    opacity: 1; /* Hides input & label, change to 1 in JS */
+    opacity: 0; /* Hides input & label, change to 1 in JS */
     transition: opacity 0.3s ease-in-out;
 
     input{
