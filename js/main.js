@@ -35,6 +35,8 @@ const formProgress = document.querySelector('#progress-bar');
 // Listen for Page Load
 document.addEventListener('DOMContentLoaded', prepForm);
 
+// Listen for Next Button Click
+nextBtn.addEventListener('click', validate);
 
 // Functions
 
