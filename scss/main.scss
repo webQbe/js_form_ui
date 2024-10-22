@@ -8,6 +8,7 @@ $primary: #428bca;
 $secondary: lighten($primary, 30%); /* Make new color by lightening $primary color */
 $light: #9e9e9e;
 $progress-height: 10px;
+$error: #ff2d26; 
 
 body{
 
@@ -178,5 +179,31 @@ h1.logo{
     height: $progress-height;
     width: 50%; /* Default: 0% */
     transition: width 0.5s ease-in-out;
+
+}
+
+
+/* Styling for errors */
+/* .error class is added through JS */
+.error {
+
+    #input-progress{
+        border-color: $error;
+    }
+
+    #next-btn{
+        color: $error;  
+    }
+}
+
+/* Making Responsive */
+
+@media(max-width: 600px){
+
+    #form-box{
+
+        width: 80%; /* Reduce width for smaller screens */
+
+    }
 
 }

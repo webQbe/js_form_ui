@@ -126,4 +126,20 @@ h1.logo {
   transition: width 0.5s ease-in-out;
 }
 
+/* Styling for errors */
+/* .error class is added through JS */
+.error #input-progress {
+  border-color: #ff2d26;
+}
+.error #next-btn {
+  color: #ff2d26;
+}
+
+/* Making Responsive */
+@media (max-width: 600px) {
+  #form-box {
+    width: 80%; /* Reduce width for smaller screens */
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
