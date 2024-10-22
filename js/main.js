@@ -19,4 +19,12 @@ const switchTime = 200;
 // Initialize Position of First Question
 let position = 0;
 
-
+// Initialize DOM Elements
+const formBox = document.querySelector('#form-box');
+const nextBtn = document.querySelector('#next-btn');
+const prevBtn = document.querySelector('#prev-btn');
+const inputGroup = document.querySelector('#input-group');
+const inputField = document.querySelector('#input-field');
+const inputLabel = document.querySelector('#input-label');
+const inputProgress = document.querySelector('#input-progress');
+const progress = document.querySelector('#progress-bar');
