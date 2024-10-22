@@ -67,6 +67,14 @@ function prepForm(){
 
 }
 
+// Display Question
+ function showQuestion(){
+
+    inputGroup.style.opacity = 1;
+    inputProgress.style.transition = '';
+    inputProgress.style.width = '100%';
+
+} 
 
 
 
