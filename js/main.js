@@ -126,13 +126,16 @@ function inputFail(){
     formBox.className = 'error';
 
     // Repeat Shake Motion of transform() 
-    // 6 Times
-    for(let i = 0; i < 6; i++){
+    // 20 Times
+    for(let i = 0; i < 20; i++){
 
         setTimeout(transform, shakeTime * i, ((i % 2) * 2 - 1) * 20, 0);
 
         // Prevent stopping at Right side
-        setTimeout(transform, shakeTime * 6, 0, 0);
+        setTimeout(transform, shakeTime * 20, 0, 0);
+        
+        // Focus Input Field
+        inputField.focus();
     }
 
 
