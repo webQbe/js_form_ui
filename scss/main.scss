@@ -157,3 +157,13 @@ h1.logo{
     }
 
 } 
+
+/* Style for input progress bar */
+
+#input-progress{
+
+    border-bottom: 3px solid $primary;
+    width: 100%; /* Default: 0%  */
+    transition: width 0.6s ease-in-out;
+
+}
