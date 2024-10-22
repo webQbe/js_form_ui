@@ -122,7 +122,8 @@ function validate(){
 // When pattern not matching
 function inputFail(){
 
-
+    // Set .error Class
+    formBox.className = 'error';
 
 }
 
