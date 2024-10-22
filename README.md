@@ -2,6 +2,7 @@
 
 - Form fields to enter: First name, Last name, Email, & Password
 - Slide for each field with Next & Prev buttons
+- Form closing animation when completed
 - Success / Registered message
 - Input & Form Progress bars to display completion status
 - Form validation with animation
