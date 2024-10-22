@@ -90,6 +90,16 @@ function hideQuestion(){
 
 }
 
+// Transform to Create Shake Motion
+function transform(x, y){
+
+    // Add Animation To formBox
+    formBox.style.transform = `translate(${x}px, ${y}px)`;
+
+}
+
+
+
 // Validate User Input
 function validate(){
 
@@ -106,5 +116,21 @@ function validate(){
         inputPass();
 
     }
+
+}
+
+// When pattern not matching
+function inputFail(){
+
+
+
+}
+
+
+// When pattern is matching
+function inputPass(){
+
+
+
 
 }
