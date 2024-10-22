@@ -1,10 +1,14 @@
 // SCSS Syntax
 
+// Importing fonts
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto');
+
 // Creating a Variable
 $primary: #428bca;
 
 body{
 
     background: $primary;
+    font-family: 'Roboto', sans-serif;
 
 }
