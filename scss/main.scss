@@ -123,7 +123,7 @@ h1.logo{
     opacity: 0; /* Hides input & label, change to 1 in JS */
     transition: opacity 0.3s ease-in-out;
 
-    input{
+    input{ 
             position: relative;
             width: 100%;
             border: none; /* Removes border */

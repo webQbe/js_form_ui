@@ -32,8 +32,9 @@ const formProgress = document.querySelector('#progress-bar');
 
 // Event Listeners
 
-// Listen for page load
+// Listen for Page Load
 document.addEventListener('DOMContentLoaded', prepForm);
+
 
 // Functions
 
@@ -75,6 +76,17 @@ function prepForm(){
     inputProgress.style.width = '100%';
 
 } 
+
+// Hide Question
+function hideQuestion(){
+
+    inputGroup.style.opacity = 0;
+    inputLabel.style.marginLeft = 0;
+    inputProgress.style.width = 0;
+    inputProgress.style.transition = 'none';
+    inputGroup.style.border = null;
+
+}
 
 
 
