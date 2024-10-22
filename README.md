@@ -3,11 +3,12 @@
 - Form fields to enter: First name, Last name, Email, & Password
 - Slide for each field with Next & Prev buttons
 - Success / Registered message
-- Progress bar to display form completion status
+- Input & Form Progress bars to display completion status
 - Form validation with animation
 - Built from scratch with HTML, CSS3, JavaScript, & SASS
 - Transitions with CSS3
 - CSS Precompiler SASS is used
+- FontAwesome Icons used
 - NodeJS must be installed
 
 ## Setting up SASS
