@@ -11,4 +11,12 @@ h1.logo {
   font-size: 4em;
 }
 
+#container {
+  height: 100vh; /* Take whole browser height */
+  display: flex; /* Align elements */
+  flex-direction: column; /* Vertically */
+  justify-content: top; /* Towards Top */
+  align-items: center;
+}
+
 /*# sourceMappingURL=main.css.map */
