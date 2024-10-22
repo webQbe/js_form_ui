@@ -132,4 +132,28 @@ h1.logo{
             box-shadow: none; /* Removes box-shadow */
     }
 
+    #input-label{
+
+        position: absolute;
+        pointer-events: none;
+        top: 32px;
+        left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        transition: 0.2s ease-in-out; /* Label moving up animation */
+
+    }
+
+    /* Change Label Style on Input */
+    input:valid + #input-label {
+
+        top: 6px; /* Moves label up */
+        left: 42px; /* Moves over prev button */
+        margin-left: 0 !important;
+        font-size: 11px; /* Smaller font size */
+        font-weight: normal;
+        color: $light;
+
+    }
+
 } 
