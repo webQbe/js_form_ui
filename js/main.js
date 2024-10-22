@@ -90,5 +90,21 @@ function hideQuestion(){
 
 }
 
+// Validate User Input
+function validate(){
 
+    // If there is a pattern in array, 
+    // make sure it matches
+    if(!inputField.value.match(questions[position].pattern || /.+/)){
 
+        // When not matching
+        inputFail();
+
+    } else {
+
+        // When matching
+        inputPass();
+
+    }
+
+}
