@@ -38,6 +38,18 @@ document.addEventListener('DOMContentLoaded', prepForm);
 // Listen for Next Button Click
 nextBtn.addEventListener('click', validate);
 
+// Listen for inputField focused Enter keypress
+inputField.addEventListener('keyup', e => {
+
+    // Check if key pressed is 'Enter'
+    if(e.keyCode == 13){
+
+        validate();
+
+    }
+
+})
+
 // Functions
 
 // Prepare DOM Elements
