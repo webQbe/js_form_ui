@@ -165,6 +165,9 @@ function inputPass(){
     setTimeout(transform, shakeTime * 0, 0, 10); // Push down 
     setTimeout(transform, shakeTime * 1, 0, 0); // Pull up again
 
+    // Store Answer in Array
+    questions[position].answer = inputField.value;
+
 
     // Change Question
     // Increment Position by 1
