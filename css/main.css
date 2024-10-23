@@ -12,6 +12,13 @@ h1.logo {
   font-size: 4em;
 }
 
+h1.end {
+  position: relative;
+  color: #FFF;
+  opacity: 0; /* Hidden by default, unhide with JS */
+  transition: 0.8s ease-in-out;
+}
+
 #container {
   height: 100vh; /* Take whole browser height */
   display: flex; /* Align elements */

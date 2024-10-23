@@ -194,3 +194,30 @@ function inputPass(){
     }
 
 }
+
+
+// Form Complete Success Message
+
+function formComplete(){
+
+    // Create h1 tag with Message
+    const h1 = document.createElement('h1');
+
+    // Add style
+    h1.classList.add('end');
+
+    // Display User's First Name in the Message
+    h1.appendChild(document.createTextNode(`Thanks ${questions[0].answer}, You are registered! You'll get an email shortly.`));
+
+    // Fade-in Animation 01 - Timeout 1000
+    setTimeout(() => {
+
+        // Append h1 to parent element of formBox 
+        formBox.parentElement.appendChild(h1);
+
+        // Fade-in Animation 02 - Timeout 50
+        setTimeout(() => h1.style.opacity = 1, 50);
+
+    }, 1000);
+
+}
