@@ -3,7 +3,7 @@ const questions = [
 
     { question: 'Enter Your First Name' },
     { question: 'Enter Your Last Name' },
-    { question: 'Enter Your Email', pattern: '/\S+@\S+\.\S+/' }, // Add regex to match email address
+    { question: 'Enter Your Email', pattern: /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,6}$/ }, // Add regex to match email address
     { question: 'Create A Password', type: 'password' }
 
 ];
@@ -92,7 +92,7 @@ function hideQuestion(){
 
 // Transform to Create Shake Motion
 function transform(x, y){
-    
+
     console.log(x, y);
 
     // Add Animation To formBox
@@ -152,5 +152,33 @@ function inputPass(){
     // Animation
     setTimeout(transform, shakeTime * 0, 0, 10); // Push down 
     setTimeout(transform, shakeTime * 1, 0, 0); // Pull up again
+
+
+    // Change Question
+    // Increment Position by 1
+    position++; 
+
+    // Check if Next Question Exists,
+    if(questions[position]){
+
+        // Hide Current & Get Next
+        hideQuestion();
+        prepForm();
+
+    } else {
+
+        // If No Other Questions
+        hideQuestion();
+
+        // Close formBox
+        formBox.className = 'close';
+
+        // Set Form Progress
+        formProgress.style.width = '100%';
+
+        // Form Completion
+        formComplete();
+
+    }
 
 }
