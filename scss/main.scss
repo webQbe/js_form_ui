@@ -182,6 +182,16 @@ h1.logo{
 
 }
 
+// Hide Arrows when formBox is closing
+.close{
+
+    #next-btn, 
+    #prev-btn{
+        color: #FFF;
+    }
+
+}
+
 
 /* Styling for errors */
 /* .error class is added through JS */
